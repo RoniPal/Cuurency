@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="icon" href="coin-removebg-preview.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Currency Exchange</h1>
+    </header>
+
+
+    <main>
+
+
+        <section id="popular-rates">
+            <h2>Popular Exchange Rates</h2>
+            <div class="rates-grid">
+                <div class="rate-card">
+                    <p><span class="from">USD</span>/<span class="to">EUR</span></p>
+                    <p class="rate" id="us/eu"></p>
+                </div>
+                <div class="rate-card">
+                    <p><span class="from">USD</span>/<span class="to">GBP</span></p>
+                    <p class="rate" id="us/en"></p>
+                </div>
+                <div class="rate-card">
+                    <p><span class="from">USD</span>/<span class="to">JPY</span></p>
+                    <p class="rate" id="us/jp"></p>
+                </div>
+                <div class="rate-card">
+                    <p><span class="from">USD</span>/<span class="to">INR</span></p>
+                    <p class="rate" id="us/in"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="exchange-form">
+            <h2>Currency Converter</h2>
+            <form id="converter-form">
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="from-currency">From</label>
+                    <select id="from-currency" name="from-currency" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="to-currency">To</label>
+                    <select id="to-currency" name="to-currency" required></select>
+                </div>
+                <button type="submit">Convert</button>
+            </form>
+            <div>
+                <p id="result"></p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!--Footer-->
+
+<footer class="foot">
+    <span id="copy"> &copy <span id="copyYear"></span> Roni Pal</span>
+    <span id="connect">Conect Us :</span> 
+    <a href= "mailto : roniofficial41@gmail.com" target="_blank"><abbr title="Email"><i class="fa-solid fa-envelope fa-xl"></i></abbr></a>
+
+    <a href="https://linktr.ee/RoniPal" target="_blank"><abbr title="Portfolio"><i class="fa-solid fa-globe fa-xl"></i></abbr></a>
+
+
+    <a href="https://www.linkedin.com/in/roni-pal-140410295/" target="_blank"><abbr title="LinkedIn"><i class="fa-brands fa-linkedin fa-xl"></i></abbr></a>
+
+
+    <a href="https://github.com/RoniPal" target="_blank"><abbr title="GitHub"><i class="fa-brands fa-github fa-xl"></i></abbr></a>
+
+
+    <a href="https://x.com/Roni_Pal_999" target="_blank"><abbr title="X"><i class="fa-brands fa-x-twitter fa-xl"></i></abbr></a>
+
+</footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>
